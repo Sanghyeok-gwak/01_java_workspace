@@ -39,5 +39,11 @@ public class First_class {
 	public static void main(String[] args) {
 		System.out.println(1);
 		System.out.println(2);
+		System.out.print('a');		
+		System.out.print('b');
+		System.out.println("asdf");
+		
+			   // System.out.println();
+	    System.out.println("hello");
 	}
 }

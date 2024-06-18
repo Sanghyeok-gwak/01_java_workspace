@@ -1,16 +1,19 @@
 package com.br.run;
 
-
+import com.br.variable.test;
 import com.br.variable.Variable;
 import com.br.variable.Keyboardinput;
 public class RunClass {
 	public static void main(String[] args) {
-	
+
 		Variable var = new Variable();
 		
-		Keyboardinput key = new Keyboardinput();
+		test test1 = new test();
+		test1.practice1();
+		
+	//	Keyboardinput key = new Keyboardinput();
 
-		key.inputTest1();
+		//key.inputTest1();
 		//var.constant();
 		//var.whyUseVariable();
 		// var.declareVariable();
@@ -35,7 +38,7 @@ public class RunClass {
 		System.out.println(pay * hour * day * week * tax);
 		*/
 
-		
+	
 	}
 	}
 

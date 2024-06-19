@@ -1,18 +1,24 @@
 package com.br.run;
-
-import com.br.variable.test;
-import com.br.variable.Variable;
-import com.br.variable.Keyboardinput;
+import com.br.variable.*;
+//import com.br.variable.test;
+//import com.br.variable.Variable;
+//import com.br.variable.Keyboardinput;
+//import com.br.variable.Printf;
 public class RunClass {
 	public static void main(String[] args) {
 
 		Variable var = new Variable();
 		
-		test test1 = new test();
-		test1.practice1();
+		//test test1 = new test();
+		//test1.practice1();
 		
-	//	Keyboardinput key = new Keyboardinput();
+		//Printf prntf = new Printf();
+		//prntf.printfTest();
+		
+		Casting key = new Casting();
 
+		key.forceCasting();
+		
 		//key.inputTest1();
 		//var.constant();
 		//var.whyUseVariable();

@@ -1,6 +1,6 @@
 package com.br.practice.example;
 
-import java.util.Random;
+
 import java.util.Scanner;
 
 public class VariablePractice {
@@ -21,10 +21,10 @@ public class VariablePractice {
 		
 		if (S==1) {
 			
-			System.out.printf("키 %.2f인 %d살 남자 %s님 반갑습니다",T,age,S,name);
+			System.out.printf("키 %.1f인 %d살 남자 %s님 반갑습니다",T,age,S,name);
 		}
 		else if(S==2) {
-			System.out.printf("키 %.2f인 %d살 여자 %s님 반갑습니다",T,age,S,name);
+			System.out.printf("키 %.1f인 %d살 여자 %s님 반갑습니다",T,age,S,name);
 			
 		}
 		else {
@@ -102,11 +102,21 @@ public class VariablePractice {
 		
 		
 		
-		System.out.println("첫 번째 문자 : "+exmple.charAt(0));
-		System.out.println("두 번째 문자 : "+exmple.charAt(1));
-		System.out.println("셋 번째 문자 : "+exmple.charAt(2));
+//		System.out.println("첫 번째 문자 : "+exmple.charAt(0));
+//		System.out.println("두 번째 문자 : "+exmple.charAt(1));
+//		System.out.println("셋 번째 문자 : "+exmple.charAt(2));
 	
+		
+				char ch1 = scan.nextLine().charAt(0);
+				char ch2 = scan.nextLine().charAt(1);
+				char ch3 = scan.nextLine().charAt(2);
+		
+		
+		
+		
+		
 	}
+	
 	
 	// 추가 문제 -----------------------------------------------------------------------
 	   public void method5() {
@@ -123,9 +133,9 @@ public class VariablePractice {
 	      
 	      Scanner scan = new Scanner(System.in);
 	      System.out.print("문자 : ");
-	      String A = scan.next();
+	      char A = scan.next().charAt(0);
 	      
-	      System.out.println(A+"숫자 값 : " );
+	      System.out.println(A+"숫자 값 : "+(int)A );
 	      
 	      
 	   }
@@ -152,9 +162,14 @@ public class VariablePractice {
 	      System.out.println("수학 점수 : ");
 	      int A3=scan.nextInt();
 	      
+	      int total= A1+A2+A3;
+	      double average = (double)total/3;
+	      
 	     
 	      System.out.println("총점 : "+(A1+A2+A3));
+	      System.out.println("총점 : "+total);
 	      System.out.printf("평균 : %.2f",(double)(A1+A2+A3)/3);
+	      System.out.printf("평균 : %.2f",average);
 	      
 	      
 	   }
@@ -169,31 +184,34 @@ public class VariablePractice {
 	       */
 	      
 	      int iNum1 = 10;
-	        int iNum2 = 4;
+	      int iNum2 = 4;
 	        
-	        float fNum = 3.0f;
-	        double dNum = 2.5;
+	      float fNum = 3.0f;
+	      double dNum = 2.5;
 	        
-	        char ch = 'A';
+	      char ch = 'A';
 	        
-	       System.out.println( iNum1 /iNum2 ); // 2
-	       System.out.println( (int)dNum ); // 2
+	      System.out.println( iNum1 /iNum2 ); // 2
+	      System.out.println( (int)dNum ); // 2
 	        
-	        System.out.println( iNum2 * dNum ); // 10.0
-	       System.out.println( iNum1 ); // 10.0
+	      System.out.println( iNum2 * dNum ); // 10.0
+	      System.out.println( (double)iNum1 ); // 10.0
 	        
-	      System.out.println( iNum1/ iNum2 ); // 2.5
+	      System.out.println( (double)iNum1/ iNum2 ); // 2.5
 	        
-	      //  System.out.println( fNum ); // 3
-	       // System.out.println( iNum1  fNum ); // 3
+	      System.out.println( (int)fNum ); // 3
+	      System.out.println( iNum1 /(int)fNum); // 3
+	        
+	        
 
-	       // System.out.println( iNum1 fNum );// 3.3333333
-	      //  System.out.println( iNum1 fNum ); // 3.333333333333335
+	      System.out.println( iNum1 /fNum );// 3.3333333
+	      System.out.println( iNum1/ (double)fNum ); // 3.333333333333335
 	        
-	       // System.out.println( ch ); // 65
-	     //   System.out.println( ch  iNum1 ); // 75
-	      //  System.out.println( ch  iNum1 ); // 'K'
+	      System.out.println( (int)ch ); // 65
+	      System.out.println( (int)ch + iNum1 ); // 75
+	      System.out.println( (char)(ch + iNum1)  ); // 'K'
 
 	   }
 	
 }
+

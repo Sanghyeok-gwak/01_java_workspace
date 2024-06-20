@@ -10,6 +10,8 @@ public class Run {
 		//EX.method4();
 		//EX.method5();
 		EX.method6();
+//		EX.method7();
+		 
 		
 	}
 }

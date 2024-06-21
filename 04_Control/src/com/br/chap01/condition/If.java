@@ -255,56 +255,44 @@ public class If {
 	public void method8() {
 		Scanner scan = new Scanner(System.in);
 		
-		
 		System.out.println("점수 : ");
 		int score= scan.nextInt();
 		System.out.println("반 : ");
 		int ban= scan.nextInt();
 		
 		String result;
-		if (ban>0 && ban<4) {
-			if (score>=60) {
-				result="합격";
-			}else {
-
-				result="불합격";
-			}
-			System.out.println(ban+"반"+score+"점으로"+result);
-			
+//		if (ban>0 && ban<4) {
+//			if (score>=60) {
+//				result="합격";
+//			}else {
+//
+//				result="불합격";
+//			}
+//			System.out.println(ban+"반"+score+"점으로"+result);
+//			
+//		}
+//		else if (ban>=4 &&ban<7) {
+//			if (score>=70) {
+//				result="합격";
+//			}else {
+//				result="불합격";
+//			}
+//			System.out.println(ban+"반"+score+"점으로"+result);
+//		}
+		int pass = 0;//합격점수
+		
+		if (ban >=1 && ban<=3){
+			pass=60;
 		}
 		else if (ban>=4 &&ban<7) {
-			if (score>=70) {
-				result="합격";
-			}else {
-				result="불합격";
-			}
-			System.out.println(ban+"반"+score+"점으로"+result);
+			pass=70;
 		}
+		 
 		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
+		if (score>=pass) {
+			System.out.println("합격");
+		}else {
+			System.out.println("불합격");
+		}
 	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 }

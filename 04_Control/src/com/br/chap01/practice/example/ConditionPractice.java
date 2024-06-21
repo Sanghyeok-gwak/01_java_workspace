@@ -257,12 +257,6 @@ public class ConditionPractice {
 			System.out.println("pass");
 		}
 		else {
-			if (((s/20.0)*100)<80) {
-				System.out.println("출석미달");
-			}
-			else {
-				
-			}
 			System.out.println("Fail");
 		}
 		

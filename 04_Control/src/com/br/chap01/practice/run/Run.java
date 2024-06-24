@@ -14,6 +14,11 @@ public class Run {
 //		cp.practice8();
 //		cp.practice9();
 		cp.practice10();
-//	System.out.println((18/20.0)*100);
+	
+		
+		
+		
+		
+		
 	}
 }

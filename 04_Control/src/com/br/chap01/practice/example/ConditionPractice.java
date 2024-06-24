@@ -228,6 +228,8 @@ public class ConditionPractice {
 		case 4 : cp.practice4();break;
 		case 5 : cp.practice5();break;
 		case 6 : cp.practice6();break;
+		case 7 : cp.practice7();break;
+		case 8 : cp.practice8();break;
 		default : System.out.println("잘못입력했습니다.");
 		}
 		
@@ -252,14 +254,26 @@ public class ConditionPractice {
 		
 		
 		String result = "";
+		String result2 = "" ;
+		String result3 = "" ;
 		
-		if (total>=80 && ((s/20.0)*100)>=80) {
-			System.out.println("pass");
+		
+		
+		if (total<80 && ((s/20.0)*100)<80) {
+			result="Fail";
+			if(((s/20.0)*100)<80) {
+				result2="출석 횟수 부족";
+				System.out.println(result+"["+result2+"]"+" ("+s+"/20)");
+			}
+			else if (total<80) {
+				result3="점수 미달";
+				System.out.println(result+"["+result3+"]"+" (총점 "+total+")");
+			}
 		}
 		else {
-			System.out.println("Fail");
+			result="Pass";
+			System.out.println(result);
 		}
-		
 		
 		
 		

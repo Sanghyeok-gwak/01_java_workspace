@@ -240,7 +240,29 @@ public class For {
 			System.out.println();
 		}
 	}
-	public void method17 () {
+	public void remind () {
+		Scanner scan = new Scanner(System.in);
+		
+		
+		System.out.println("입력 : ");
+		int x = scan.nextInt();
+		System.out.println("정수 : "+x);
+		if(x>0) {
+			for(int i =1; i<=x; i++) {
+				if(i%2!=0) {
+					System.out.print("박");
+					
+				}else {
+					System.out.print("수");
+					
+				}
+			}
+		}
+		
+		else {
+			
+			System.out.println("다시입력해주세요");
+		}
 		
 	}
 }

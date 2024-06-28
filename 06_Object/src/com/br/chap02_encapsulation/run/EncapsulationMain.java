@@ -38,24 +38,32 @@ public class EncapsulationMain {
 		// => 간접적으로나마 접근해서 대입할 수 잇는 기능을 정의 
 		//		Student 클래스내에 setter메소드로 정의 
 		
-		hong.setName("홍길동");
-		hong.setAge(20);
-		hong.setHeight(172.3);
-		hong.setKorScore(80);
-		hong.setMathScore(100);
-		
-		System.out.println(hong);
+//		hong.setName("홍길동");
+//		hong.setAge(20);
+//		hong.setHeight(172.3);
+//		hong.setKorScore(80);
+//		hong.setMathScore(100);
+//		
+//		System.out.println(hong);
 		
 		//System.out.println(hong.name);
 		
 		// 간접적으로나마 해당 필드값을 돌려주는 기능의 메소드 정의
 		// =>  Student클래스내에 getter메소드
+//		
+//		System.out.println(hong.getName());
+//		System.out.println(hong.getAge());
+//		System.out.println(hong.getHeight());
+//		System.out.println(hong.getKorScore());
+//		System.out.println(hong.getMathScore());
 		
-		System.out.println(hong.getName());
-		System.out.println(hong.getAge());
-		System.out.println(hong.getHeight());
-		System.out.println(hong.getKorScore());
-		System.out.println(hong.getMathScore());
+		Student sd = new Student("곽상혁" , 27,170.5);
+		Student sd2 = new Student("김개똥" , 17,120.5,30,20);
+		
+		System.out.println(sd.information());
+		System.out.println(sd2.information());
+		
+		
 		
 	}
 

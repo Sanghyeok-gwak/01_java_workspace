@@ -22,6 +22,28 @@ public class Student {
 	 * 2. 생성자
 	 */
 	
+	public Student() {}
+	public Student(String name , int age, double height) {
+		this.name = name;
+		this.age = age;
+		this.height = height;
+	}
+	
+	public Student(String name , int age, double height,int korScore,int mathScore) {
+//		this.name = name;
+//		this.age = age;
+//		this.height = height;//첫번째
+		this (name,age,height);//두번째 방법
+		this.korScore = korScore;
+		this.mathScore = mathScore;
+	}
+	
+	
+	public String information() {
+		return "이름 : "+name +" 나이 : "+age+" 키 : "+height+" 국어점수 : "+korScore +" 수학점수 : "+mathScore;
+	}
+	
+	
 	/*
 	 * 3. 메소드 | 멤버메소드
 	 *    기능을 정의하는 부분

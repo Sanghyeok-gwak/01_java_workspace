@@ -2,12 +2,17 @@ package com.br.chap03_class.model.vo;
 
 public class Product {
 	
-	
-	
 	private String pName;
 	private int price;
 	private String brand;
 	
+	public Product() {}
+	public Product (String pName,int price,String brand) {
+		this.pName=pName;
+		this.price=price;
+		this.brand=brand;
+	} 
+	//----------------------------------------------------
 	public void setpName(String pName) {
 		this.pName = pName;
 	}
@@ -33,8 +38,6 @@ public class Product {
 	public String information(){
 		
 		return "pName : "+pName +", price : "+ price +", brand : "+ brand ;
-		
-		
 	}
 	
 }

@@ -15,6 +15,7 @@ public class ProductTest {
 		System.out.println(pro2.information());
 		System.out.println(pro3.information());
 
+		
 		System.out.println("==============================================================");
 
 		// 2. setter메소드를 이용하여 가격을 모두 120만원으로 수정, 부가세율도 모두 0.05로 수정 후 출력

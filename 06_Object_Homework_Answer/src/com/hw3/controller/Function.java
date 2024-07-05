@@ -129,6 +129,7 @@ public class Function {
 
 			return result;
 			
+			
 		}else { // 전달받은 문자열이 null이거나 ""일 경우 (즉, 제대로된 값이 아닐경우)
 			return null;
 		}

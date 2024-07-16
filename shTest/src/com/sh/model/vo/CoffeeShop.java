@@ -3,14 +3,14 @@ package com.sh.model.vo;
 import java.util.ArrayList;
 import java.util.List;
 
-public class CafeShop {
-	private List<Cafe> cf = new ArrayList<>();
+public class CoffeeShop {
+	private List<Coffee> cf = new ArrayList<>();
 	private List<Bread> bd= new ArrayList<>();
 	private String userid;
 	private String userpwd;
 	private String cafetitle;
 	private String cafeaddres;
-	public CafeShop(List<Cafe> cf, List<Bread> bd, String userid, String userpwd, String cafetitle, String cafeaddres) {
+	public CoffeeShop(List<Coffee> cf, List<Bread> bd, String userid, String userpwd, String cafetitle, String cafeaddres) {
 		super();
 		this.cf = cf;
 		this.bd = bd;
@@ -21,13 +21,13 @@ public class CafeShop {
 	}
 	@Override
 	public String toString() {
-		return "CafeShop [cf=" + cf + ", bd=" + bd + ", userid=" + userid + ", userpwd=" + userpwd + ", cafetitle="
-				+ cafetitle + ", cafeaddres=" + cafeaddres + "]";
+		return "CoffeShop \ncafetitle=" +cafetitle + ", cafeaddres=" + cafeaddres +"\n"+
+				cf + "\n" + bd ;
 	}
-	public List<Cafe> getCf() {
+	public List<Coffee> getCf() {
 		return cf;
 	}
-	public void setCf(List<Cafe> cf) {
+	public void setCf(List<Coffee> cf) {
 		this.cf = cf;
 	}
 	public List<Bread> getBd() {

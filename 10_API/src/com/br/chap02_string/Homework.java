@@ -1,6 +1,5 @@
 package com.br.chap02_string;
 
-import java.util.Arrays;
 
 import com.br.chap02_string.model.vo.Shop;
 
@@ -22,36 +21,26 @@ public class Homework {
 						+ "10,백년미가(유촌점),광주광역시 서구 유덕로28번길 18,062-946-3392,한상맛집,2022-01-11";
 		
 		// 위의 shopCsv 문자열을 적절하게 분리해서 
+		String s []=shopCsv.split("\n");
 		
-//		String s [] =new String[10];
-//		s=shopCsv.split("\n");
-//		
-//		String a []= new String [];
-//		
-//		for(int i=0; i<s.length; i++) {
-//			String temp[] = s[i].split(",");
-//			
-//			
-//			System.out.println(temp.length);
-//			
-//		}
-//		
-//		for(int i =0; i<s.length; i++) {
-//		}
-//		// 모든 맛집에 대한 정보를 Shop[] 로 담아내기
-//		sh.setNum(s[0]);		
-//		sh.setShopName(s[1]);		
-//		sh.setNum(s[2]);		
-//		sh.setNum(s[3]);		
-//		sh.setNum(s[4]);		
-//		sh.setNum(s[5]);		
-//		sh.setNum(s[6]);		
-//		sh.setNum(s[7]);		
-//		sh.setNum(s[8]);		
-//		sh.setNum(s[9]);		
+		
+		Shop[] shopArr = new Shop[s.length];
 		
 		
 		
+		for(int i =0; i<s.length; i++) {
+			String arr[]=s[i].split(",");
+			shopArr[i]=new Shop(arr[0],arr[1],arr[2],arr[3],arr[4],arr[5]);
+		}
+		
+		for(Shop x : shopArr) {
+			System.out.println(x);
+		}
+		
+		
+		
+		
+			
 	}
 
 }

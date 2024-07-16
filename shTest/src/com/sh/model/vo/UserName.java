@@ -8,13 +8,14 @@ public class UserName {
 	private int money;
 	
 	private List<Object> baske = new ArrayList<>();
-
+	
+	public UserName() {}
 	@Override
 	public String toString() {
 		return "UserName [name=" + name + ", money=" + money + ", baske=" + baske + "]";
 	}
 
-	public UserName(String name, int money, List<Object> baske) {
+	public UserName( List<Object> baske,String name, int money) {
 		super();
 		this.name = name;
 		this.money = money;

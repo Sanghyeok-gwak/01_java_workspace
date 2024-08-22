@@ -80,6 +80,8 @@ public class MapController {
 		
 		// * get(Object key) : 맵 컬렉션에서 키값을 가지는 Value 값을 v 타입으로 반환
 		Snack s = map.get("다이제");
+		
+		
 		System.out.println(s);
 		
 		// * size : 컬렉션 내에 담겨있는 요소들의 갯수 반환

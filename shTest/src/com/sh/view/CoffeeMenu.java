@@ -230,14 +230,15 @@ public class CoffeeMenu {
 		}
 		else {
 			for(int i =0; i<basket.size(); i++) {
-				System.out.println(basket.get(i).toString());
+				System.out.println(basket.get(i));
 			}
-			scan.nextLine();
 			
+			
+			scan.nextLine();
 			System.out.println("주문 하시겠습니까 ?(y/n)");
 			char ch =scan.nextLine().charAt(0);
 			if(ch== 'y'||ch== 'Y') {
-				int result =0;
+				int result =cm.last();
 				
 				if(result == 1) {
 					System.out.println("정상적으로 주문이 완료되었습니다.");

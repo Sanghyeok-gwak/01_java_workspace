@@ -30,6 +30,7 @@ public class LocalDateTimeMain {
 		System.out.println(date1.getDayOfMonth());
 		
 		
+		
 		LocalDate date2 = LocalDate.of(2024, 12, 11);
 		System.out.println(date2);
 		

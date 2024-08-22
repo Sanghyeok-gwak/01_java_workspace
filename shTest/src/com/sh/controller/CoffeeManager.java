@@ -122,13 +122,25 @@ public class CoffeeManager {
 	public int last () {
 		int result=0;
 		int total =0;
+		
+		
 		for(int i =0; i<baske.size(); i++) {
-			total+=((Coffee)baske.get(i)).getPrice()+((Bread)baske.get(i)).getPrice();
+			
+			if(baske.get(i) instanceof Coffee) {
+				total+=((Coffee)baske.get(i)).getPrice();
+			}
+			if(baske.get(i) instanceof Bread) {
+				
+				total+=((Bread)baske.get(i)).getPrice();
+			}
+			
 		}
 		
 		
-		if(total >un.getMoney()) {
+		if(total <un.getMoney()) {
 			result =1;
+		}else {
+			result =0;
 		}
 	
 		

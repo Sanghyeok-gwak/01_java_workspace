@@ -6,7 +6,7 @@ public class Run {
 	public static void main(String[] args) {
 		AtmMenu am = new AtmMenu();
 		
-		am.mianMenu();
+		am.userMenu();
 		
 		
 	} 

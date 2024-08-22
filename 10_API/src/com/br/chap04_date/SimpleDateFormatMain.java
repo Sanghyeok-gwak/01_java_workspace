@@ -27,15 +27,16 @@ public class SimpleDateFormatMain {
 		//2014 
 		
 		// java.util.Date 객체
-		SimpleDateFormat sdf = new SimpleDateFormat("yyyy년 MM월 dd일 hh(HH):mm:ss");
+		SimpleDateFormat sdf = new SimpleDateFormat("yyyy년 MM월 dd일 hh(HH):mm");
 //		System.out.println(sdf);
 		String dateStr = sdf.format(new Date());
 		System.out.println(dateStr);
 		
+//		
 //		String calStr = sdf.format(Calendar.getInstance());
-		String calStr = sdf.format(Calendar.getInstance().getTimeInMillis());
-		System.out.println(calStr);
-		
+//		String calStr = sdf.format(Calendar.getInstance().getTimeInMillis());
+//		System.out.println(calStr);
+//		
 		
 //		System.out.println(Calendar.getInstance().getTimeInMillis());
 		
